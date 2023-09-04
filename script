@@ -44,7 +44,7 @@ def lambda_handler(event, context):
     eta = get_eta()
     if eta:
         eta_minutes = eta
-        message = f"Your ETA to {DESTINATION} is approximately {eta_minutes} minutes today."
+        message = f"Your ETA to {DESTINATION} is approximately {eta_minutes} minutes today. Have a great day!"
 
         # Initialize the Twilio client
         client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
